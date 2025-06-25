@@ -1,3 +1,4 @@
+/* 
 .alekpet_extras_node_speechrecognition_box {
   margin: 0px;
   padding: 0px;
@@ -60,12 +61,14 @@
 .alekpet_extras_node_recognition_aborted:hover {
   color: var(--error-text);
 }
+*/
 
 .alekpet_extras_node_info {
   display: flex;
   align-self: center;
 }
 
+/* 
 .alekpet_extras_node_speech_recognition_checkbox {
   width: 10px;
   height: 10px;
@@ -99,8 +102,10 @@
   right: 3px;
   color: var(--error-text);
 }
+*/
 
 /* Settings */
+/* 
 .alekpet_extras_node_speech_recognition_settings_props_label {
   background: #646363;
   color: #cdcbcb;
@@ -128,6 +133,7 @@
   display: flex;
   font-size: 0.6rem;
 }
+*/
 
 /* Style custom Confirm buttons */
 .alekpet_confButtons {
