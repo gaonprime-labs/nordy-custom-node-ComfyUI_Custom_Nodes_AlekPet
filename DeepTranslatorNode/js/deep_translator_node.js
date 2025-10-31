@@ -188,7 +188,11 @@ function get_support_langs() {
 
         // Auth
         const auth_data = responseData?.auth_data;
-        if (widget_auth_data) {
+        if (
+          widget_auth_data &&
+          auth_data instanceof Object &&
+          Object.keys(auth_data)?.length
+        ) {
           let placeholder = Object.keys(placeholders).find(
             (ph_key) => ph_key.includes(service) || ph_key === service
           );
@@ -204,7 +208,7 @@ function get_support_langs() {
 }
 
 app.registerExtension({
-  name: "Comfy.TranslateNode",
+  name: "alekpet.TranslateNode",
   async beforeRegisterNodeDef(nodeType, nodeData, app) {
     // --- DeepTranslatorTextNode and DeepTranslatorCLIPTextEncodeNode
     if (
